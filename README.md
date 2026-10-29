@@ -1,56 +1,35 @@
-# employee_notification Usman Ghias
+# Visa and Work Permit Expiry Reminders
 
-Metadata repository for the private repo: employee_notification. Employee Notification Odoo Apps Store
+![Odoo](https://img.shields.io/badge/Odoo-17.0-714B67) ![Editions](https://img.shields.io/badge/Editions-Community%2C_Enterprise-2563EB) ![License](https://img.shields.io/badge/License-OPL--1-0F766E)
 
-> Portfolio showcase for a private/proprietary implementation. The production source is **not** included in this repository.
+In Saudi Arabia, the UAE and Qatar an expired visa or work permit means a fine for the employer. This app tracks both dates on the employee and warns the employee and their manager a week before expiry.
 
-## Overview
+## What it does
 
-`employee_notification` is documented here as a professional case study. This repository contains portfolio metadata and high-level documentation only.
+- Visa Expiry Date and Work Permit Expiry Date on the employee form
+- Daily scheduled action that finds expiries in the next 7 days
+- To-do activity created on the employee record
+- Reminder email to the employee with the manager in CC
+- Expiration notice shown on the form
 
-## Problem solved
+## How to use it
 
-Metadata repository for the private repo: employee_notification. Employee Notification Odoo Apps Store
+1. Fill in the two dates on each employee. The scheduled action does the rest.
 
-## Key capabilities
+## Technical notes
 
-- Business-process customization aligned to operational needs
-- Integration with standard Odoo apps where applicable
-- Practical UI and workflow improvements for end users
+Technical name `employee_notification`, Odoo 17.0.
 
-## Technology and Odoo version
+Extends `hr.employee` and adds an `ir.cron` job and a mail template. Depends on `hr` and `mail`.
 
-- Stack: Odoo, Python, ERP customization
-- Repository type: portfolio case study / documentation
-- Related module/project name: `employee_notification`
+## Get the module
 
-## My contribution
+This module is not on the Odoo App Store yet. Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=employee_notification) for a licence, the full source code and installation on your database.
 
-Architecture, development, customization, integration, testing, and delivery support for the underlying implementation (as applicable to this project).
-
-## Architecture at a high level
-
-Standard Odoo/ERP extension patterns: module metadata, business models, views/actions, and workflow customization layered on core Odoo apps. Exact proprietary implementation details are intentionally omitted.
-
-## Screenshots or demo
-
-Screenshots are available on request. Any shared visuals must be anonymized and used only with permission.
-
-## Source availability
-
-The production implementation lives in a private repository because it contains proprietary and/or client-specific work, configuration, or assets.
-
-This repository must not be treated as an open-source release of the production codebase.
-
-## License and attribution
-
-Documentation in this showcase repository is provided for portfolio demonstration. Third-party trademarks and product names remain the property of their owners. This README does **not** relicense any private source code.
-
-## Contact
-
-- GitHub: https://github.com/UsmanGhias
-- Profile / portfolio repositories under the same account
+Need it on another Odoo version, with changes for your workflow, or installed and tested on Odoo.sh? Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=employee_notification%20customisation) or see [CODCrafters](https://codcrafters.org).
 
 ---
 
-Status: Portfolio showcase (documentation only)
+This repository is the product page. The module source is private and comes with the licence.
+
+Built by [Usman Ghias](https://usmanghias.co.uk), [CODCrafters](https://codcrafters.org).
